@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>captcha generator</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        body{
+            background-color: rgb(115, 128, 139);
+        }
+        button{
+            margin-top: 30px;
+            text-align: center;
+            align-items: center;
+            border-radius: 5px;
+            font-size: larger;
+            cursor: pointer;
+        }
+        .total{
+            width: 15%;
+            height: 200px;
+            background-color: rgb(159, 188, 212);
+            /* display: flex;
+            justify-content: space-around; */
+            padding: 30px;
+            border-style: solid;
+            border-radius: 3px;
+            margin-left: 40%;
+            margin-top: 20px;
+        }
+        .capta{
+            font-size: x-large;
+            width: 95%;
+            height: 30px;
+            background-image: url(b-captcha.jpeg);
+            text-align: center;
+            align-items: center;
+            border-style: solid;
+            border-width: 3px;
+            border-radius: 5px;
+        }
+        .entercapta{
+            resize: none;
+            font-size: x-large;
+            margin-top: 30px;
+            width: 95%;
+            height: 30px;
+            border-style: solid;
+            border-width: 3px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .refresh{
+            width: 48%;
+            height: 30px;
+            background-color: blue;
+        }
+        .check{
+            width: 48%;
+            height: 30px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1><b><u>CAPTCHA GENERATOR</u></b></h1>
+    <hr>
+    <div class="total">
+        <div class="capta"></div>
+       <textarea class="entercapta" placeholder="Enter captcha"></textarea>
+        <button onclick="generate()" class="refresh">Refresh</button>
+        <button onclick="checking()" class="check">Check</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
